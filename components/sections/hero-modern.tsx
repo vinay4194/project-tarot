@@ -65,7 +65,7 @@ export function HeroModern() {
             transition={{ duration: 1, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="text-xl lg:text-2xl text-white/80 mb-12 max-w-2xl mx-auto font-light leading-relaxed tracking-wide"
           >
-            Discover clarity and guidance for life's most important decisions
+            Discover clarity and guidance for life&apos;s most important decisions
           </motion.p>
 
           <motion.div

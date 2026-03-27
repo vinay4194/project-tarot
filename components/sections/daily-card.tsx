@@ -4,6 +4,7 @@ import { Section } from '@/components/ui/section';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sparkles, RefreshCw, Heart, Lightbulb, Star, Compass } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const tarotWisdom = [
   {
@@ -52,10 +53,8 @@ const tarotWisdom = [
 
 export function DailyCard() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
     // Set random initial card only on client
     setCurrentIndex(Math.floor(Math.random() * tarotWisdom.length));
   }, []);
@@ -145,7 +144,7 @@ export function DailyCard() {
                 </h3>
 
                 <p className="text-xl lg:text-2xl text-white/90 leading-relaxed font-light mb-8">
-                  "{currentWisdom.quote}"
+                  &ldquo;{currentWisdom.quote}&rdquo;
                 </p>
 
                 <button
@@ -187,12 +186,12 @@ export function DailyCard() {
           <p className="text-white/60 mb-6 text-lg">
             Ready to experience the clarity tarot can bring to your life?
           </p>
-          <a
+          <Link
             href="/book-reading"
             className="inline-block px-8 py-4 rounded-full bg-gold-gradient text-cosmic-dark font-medium hover:shadow-gold magnetic-button transition-all text-lg"
           >
             Book Your Reading
-          </a>
+          </Link>
         </motion.div>
       </div>
     </Section>

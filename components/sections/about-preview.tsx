@@ -40,17 +40,17 @@ export function AboutPreview() {
 
           <div className="space-y-4 text-white/80 leading-relaxed mb-8">
             <p>
-              With over 5 years of experience in tarot reading, I've helped hundreds of
+              With over 5 years of experience in tarot reading, I&apos;ve helped hundreds of
               people across India find clarity, make confident decisions, and connect
               with their inner wisdom.
             </p>
             <p>
               Every reading is conducted with compassion, honesty, and deep respect for
               your journey. I believe tarot is a tool for empowerment, offering insights
-              that help you navigate life's complexities with confidence.
+              that help you navigate life&apos;s complexities with confidence.
             </p>
             <p>
-              Whether you're facing challenges in love, career, or personal growth,
+              Whether you&apos;re facing challenges in love, career, or personal growth,
               my readings provide the clarity and guidance you need to move forward.
             </p>
           </div>

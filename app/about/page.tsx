@@ -36,14 +36,14 @@ export default function AboutPage() {
 
           <div className="flex flex-col justify-center space-y-6 text-white/80">
             <p className="text-lg leading-relaxed">
-              Welcome. I'm a professional tarot reader with over 5 years of experience helping
+              Welcome. I&apos;m a professional tarot reader with over 5 years of experience helping
               people across India find clarity, make confident decisions, and connect with their
               inner wisdom.
             </p>
             <p className="leading-relaxed">
               My journey with tarot began as a personal exploration of spirituality and
               self-discovery. What started as curiosity evolved into a deep passion for helping
-              others navigate life's complexities through the wisdom of the cards.
+              others navigate life&apos;s complexities through the wisdom of the cards.
             </p>
             <p className="leading-relaxed">
               I believe tarot is a powerful tool for empowerment, not fortune-telling. Every
@@ -52,7 +52,7 @@ export default function AboutPage() {
               informed decisions aligned with your highest good.
             </p>
             <p className="leading-relaxed">
-              Whether you're facing challenges in love, career, or personal growth, I'm here
+              Whether you&apos;re facing challenges in love, career, or personal growth, I&apos;m here
               to offer the guidance and clarity you need to move forward with confidence.
             </p>
           </div>
@@ -136,7 +136,7 @@ export default function AboutPage() {
             Ready to Begin Your Journey?
           </h3>
           <p className="text-white/70 mb-8 max-w-xl mx-auto">
-            Book a reading and discover the clarity and guidance you've been seeking.
+            Book a reading and discover the clarity and guidance you&apos;ve been seeking.
           </p>
           <Link href="/book-reading">
             <Button size="lg" variant="primary">

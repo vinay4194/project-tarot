@@ -66,7 +66,7 @@ export default function ServicesPage() {
 
                 <div className="mb-6">
                   <h3 className="text-sm font-semibold text-cosmic-gold mb-3 uppercase tracking-wide">
-                    What's Included
+                    What&apos;s Included
                   </h3>
                   <ul className="space-y-2">
                     {service.features.slice(0, 4).map((feature, index) => (
@@ -100,7 +100,7 @@ export default function ServicesPage() {
             Not Sure Which Reading to Choose?
           </h3>
           <p className="text-white/70 mb-6 max-w-xl mx-auto">
-            Contact me and I'll help you select the perfect reading for your current situation and questions.
+            Contact me and I&apos;ll help you select the perfect reading for your current situation and questions.
           </p>
           <Link href="/contact">
             <Button variant="outline">

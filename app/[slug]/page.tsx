@@ -15,8 +15,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const service = services.find((s) => s.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const service = services.find((s) => s.slug === slug);
   if (!service) return {};
 
   return generateSEOMetadata({
@@ -27,8 +28,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   });
 }
 
-export default function ServicePage({ params }: { params: { slug: string } }) {
-  const service = services.find((s) => s.slug === params.slug);
+export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const service = services.find((s) => s.slug === slug);
 
   if (!service) {
     notFound();
@@ -76,7 +78,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           {/* What's Included */}
           <Card className="mb-12">
             <h2 className="text-2xl font-serif mb-6 cosmic-text-gradient">
-              What's Included
+              What&apos;s Included
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
               {service.features.map((feature, index) => (
@@ -117,7 +119,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                 empower you to make informed decisions.
               </p>
               <p>
-                After booking, you'll receive a confirmation with details about your session.
+                After booking, you&apos;ll receive a confirmation with details about your session.
                 You can choose between a live video reading or a detailed written report delivered
                 within 24 hours.
               </p>
@@ -171,7 +173,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               Ready to Get Started?
             </h3>
             <p className="text-white/70 mb-8 max-w-xl mx-auto">
-              Book your {service.title.toLowerCase()} and discover the clarity you've been seeking.
+              Book your {service.title.toLowerCase()} and discover the clarity you&apos;ve been seeking.
             </p>
             <Link href="/book-reading">
               <Button size="lg" variant="primary">

@@ -7,6 +7,7 @@ import { faqs } from '@/lib/data';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function FAQPage() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -66,14 +67,14 @@ export default function FAQPage() {
             Still Have Questions?
           </h3>
           <p className="text-white/70 mb-6">
-            Feel free to reach out. I'm here to help clarify any concerns you may have.
+            Feel free to reach out. I&apos;m here to help clarify any concerns you may have.
           </p>
-          <a
+          <Link
             href="/contact"
             className="inline-block px-6 py-3 rounded-lg border border-cosmic-gold/30 text-cosmic-gold hover:bg-cosmic-gold/10 transition-all"
           >
             Contact Me
-          </a>
+          </Link>
         </Card>
       </Container>
     </Section>

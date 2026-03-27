@@ -21,7 +21,7 @@ export function Starfield() {
             top: `${star.y}%`,
             width: `${star.size}px`,
             height: `${star.size}px`,
-            // @ts-ignore
+            // @ts-expect-error - CSS custom property
             '--star-delay': star.delay,
           }}
         />

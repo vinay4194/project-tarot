@@ -262,7 +262,7 @@ export default function BookReadingPage() {
             </button>
 
             <p className="text-center text-white/50 text-sm">
-              You'll receive a confirmation email with payment details and next steps
+              You&apos;ll receive a confirmation email with payment details and next steps
             </p>
           </form>
         </Card>

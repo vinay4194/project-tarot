@@ -20,7 +20,7 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="text-xl text-white/70 max-w-2xl mx-auto">
-            Ready to book a reading or have questions? I'm here to help guide you on your journey.
+            Ready to book a reading or have questions? I&apos;m here to help guide you on your journey.
           </p>
         </div>
 

@@ -40,7 +40,7 @@ export function CtaSection() {
 
           <p className="text-xl text-white/70 mb-10 max-w-2xl mx-auto">
             Take the first step toward clarity. Book your personalized tarot reading
-            and discover the guidance you've been seeking.
+            and discover the guidance you&apos;ve been seeking.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

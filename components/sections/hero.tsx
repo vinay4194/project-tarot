@@ -65,7 +65,7 @@ export function Hero() {
           >
             Clarity for Your
             <br />
-            <span className="cosmic-text-gradient">Life's Journey</span>
+            <span className="cosmic-text-gradient">Life&apos;s Journey</span>
           </motion.h1>
 
           <motion.p
